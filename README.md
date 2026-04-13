@@ -1,4 +1,4 @@
-# Plan Tracker 📅
+# Schedule Tracker 📅
 
 A simple, beautifully designed, and strict plan tracking system to monitor what you plan versus what you successfully complete. Built with modern web aesthetics featuring glassmorphism and smooth interactions.
 
