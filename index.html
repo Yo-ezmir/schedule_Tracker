@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Tracker</title>
+    <!-- Add SEO Best practices where applicable -->
+    <meta name="description" content="A simple, static plan tracking system to monitor what you plan vs what you successfully complete.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Plan Tracker</h1>
+            <p>Simple and strict plan tracking system.</p>
+        </header>
+
+        <section class="form-section glass">
+            <h2>Add Block</h2>
+            <form id="tracker-form">
+                <div class="input-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="input-group">
+                    <label for="time-slot">Time Slot</label>
+                    <input type="text" id="time-slot" placeholder="e.g. 2-4" required>
+                </div>
+                <div class="input-group">
+                    <label for="planned-task">Planned Task</label>
+                    <input type="text" id="planned-task" placeholder="Task description..." required>
+                </div>
+                <div class="input-group">
+                    <label for="weekly-plan">Weekly Plan</label>
+                    <input type="text" id="weekly-plan" placeholder="Week intent...">
+                </div>
+                <div class="input-group">
+                    <label for="monthly-plan">Monthly Plan</label>
+                    <input type="text" id="monthly-plan" placeholder="Main goal...">
+                </div>
+                <div class="input-group">
+                    <label for="special-tasks">Special Tasks</label>
+                    <input type="text" id="special-tasks" placeholder="Urgent...">
+                </div>
+                <button type="submit" class="submit-btn" id="add-plan-btn">Add Plan</button>
+            </form>
+        </section>
+
+        <section class="table-section glass">
+            <div class="table-wrapper">
+                <table id="tracker-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Day</th>
+                            <th>Time Slot</th>
+                            <th>Planned Task</th>
+                            <th>Weekly Plan</th>
+                            <th>Monthly Plan</th>
+                            <th>Special Tasks</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        <!-- Rows injected here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
